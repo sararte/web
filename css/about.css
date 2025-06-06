@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+  font-family: Georgia, serif;
+  color: #111;
+}
+
+#about-layout {
+  margin-left: 180px; /* espacio para el menú lateral */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  min-height: 100vh;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.about-image img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.about-text h1 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  color: #000;
+}

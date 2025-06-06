@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  font-family: Georgia, serif;
+  color: #111;
+}
+
+#contact-layout {
+  margin-left: 180px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 100px;
+  min-height: 100vh;
+  gap: 100px;
+  box-sizing: border-box;
+}
+
+.contact-image img {
+  width: auto;
+  height: 700px; /* ← fuerza a crecer hacia abajo */
+  display: block;
+  object-fit: cover;
+}
+
+.contact-info {
+  font-size: 18px;
+  line-height: 1.9;
+  max-width: 500px;
+  padding-top: 40px;
+}
+
+.contact-info h1 {
+  font-size: 34px;
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+
+.contact-info a {
+  color: #111;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
