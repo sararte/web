@@ -1,35 +1,4 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-html, body {
-  height: 100%;
-  overflow: hidden;
-  background-color: black;
-}
-
-#background {
-  width: 100vw;
-  height: 100vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: background-image 1.5s ease-in-out;
-}
-
-#nombre-imagen {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 4px 8px;
-  font-size: 14px;
-  font-family: sans-serif;
-  z-index: 999;
-} */
 
 body {
   margin: 0;
@@ -56,12 +25,3 @@ body {
   transition: opacity 2.5s ease-in-out;
 }
 
-/* #menu-home img {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid white;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
-}
- */

@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  /* background-color: #f4f4f4; */
-  background-color: rgb(116, 115, 115);
+  background-color: #f4f4f4;
+  /* background-color: rgb(116, 115, 115); */
   font-family: Georgia, serif;
   color: #111;
 }
@@ -26,13 +26,6 @@ body {
   object-fit: cover;
 }
 
-
-/* .contact-info {
-  font-size: 18px;
-  line-height: 1.9;
-  max-width: 500px;
-  padding-top: 40px;
-} */
 
 .contact-info {
   display: flex;

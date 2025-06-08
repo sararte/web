@@ -3,17 +3,22 @@
 body.proposals {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
   color: #111;
-  display: flex;
 }
 
+/* === MENÚ LATERAL FLOTANTE === */
+
 #side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 180px;
-  background-color: #e6e6e6;
-  height: 100vh;
+  height: 100%;
+  background-color: #f2f2f2;
   padding-top: 40px;
   box-sizing: border-box;
+  z-index: 10;
 }
 
 #side-menu ul {
@@ -29,69 +34,45 @@ body.proposals {
 
 #side-menu a {
   text-decoration: none;
-  color: white;
+  color: #999;
   font-size: 16px;
   padding: 5px 10px;
   display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 #side-menu a.active {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #999;
 }
 
-.home-icon {
-  width: 40px;
-  height: 40px;
-  border: 2px solid white;
-  border-radius: 50%;
-  padding: 4px;
-}
-
-/* === CONTENIDO PRINCIPAL === */
+/* === CONTENIDO CENTRAL === */
 
 #obras-content {
-  flex-grow: 1;
   padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+/* === TÍTULO DE CATEGORÍA === */
 
 .category-title {
   font-size: 28px;
   margin-bottom: 20px;
+  padding-left: 180px; /* para evitar solape con el menú */
 }
+
+/* === COVERS === */
 
 .cover-row {
   display: flex;
-  flex-direction: row;
-  gap: 30px;
   flex-wrap: wrap;
-}
-
-/* .cover-item {
-  width: 240px;
-  height: 240px;
-  overflow: hidden;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0;
-  box-sizing: border-box;
+  gap: 30px;
 }
 
-.cover-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.cover-year {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #555;
-} */
 .cover-item {
-  width: 240px;
-  height: auto;
+  width: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,8 +81,8 @@ body.proposals {
 }
 
 .cover-item img {
-  width: 240px;
-  height: 240px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   display: block;
 }

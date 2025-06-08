@@ -719,6 +719,28 @@
         "width": 3,
         "height": 5,
         "orientation": "vertical"
+      },
+      {
+        "title": "No más venganza",
+        "year": "2016-2017",
+        "subtitle": "El silencio está tomando el control",
+        "materials": "Panel de madera impreso, audio, dispositivo electrónico, alfombra roja y paja",
+        "dimensions": "5 x 3 x 2 m (apróx.)",
+        "image": "../img/installations/2016-2017/nmv-5.png",
+        "width": 3,
+        "height": 5,
+        "orientation": "vertical"
+      },
+      {
+        "title": "No más venganza",
+        "year": "2016-2017",
+        "subtitle": "El silencio está tomando el control",
+        "materials": "Panel de madera impreso, audio, dispositivo electrónico, alfombra roja y paja",
+        "dimensions": "5 x 3 x 2 m (apróx.)",
+        "image": "../img/installations/2016-2017/nmv-6.png",
+        "width": 5,
+        "height": 4,
+        "orientation": "horizontal"
       }
     ],
     "2015-2016": [

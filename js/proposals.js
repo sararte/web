@@ -6,7 +6,7 @@ const contenedor = document.getElementById("obras-content");
 // Crear el título
 const titulo = document.createElement("h2");
 titulo.className = "category-title";
-titulo.textContent = "Dibujos";
+titulo.textContent = "Drawings";
 contenedor.appendChild(titulo);
 
 // Crear la fila para los covers

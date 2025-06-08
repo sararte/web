@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  /* background-color: #f4f4f4; */
-  background-color: rgb(116, 115, 115);
+  background-color: #f4f4f4;
+  /* background-color: rgb(116, 115, 115); */
   font-family: Georgia, serif;
-  color: #111;
+  color: #111111;
 }
 
 #about-layout {
