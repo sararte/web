@@ -52,24 +52,35 @@ body.proposals {
   padding: 60px 40px;
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 180px; /* espacio desde el menú */
 }
+
 
 /* === TÍTULO DE CATEGORÍA === */
 
 .category-title {
   font-size: 28px;
-  margin-bottom: 20px;
-  padding-left: 180px; /* para evitar solape con el menú */
+  margin: 40px 0 20px 0;
+  padding-left: 0;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
+
 
 /* === COVERS === */
 
 .cover-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  justify-content: flex-start;
+  gap: 10px;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .cover-item {
   width: 220px;

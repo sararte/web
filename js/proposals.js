@@ -43,5 +43,87 @@ fetch("../data/artworks_with_dimensions.json")
     });
 
     contenedor.appendChild(fila);
+
+      // ======== PAINTINGS ========
+
+    const container = document.getElementById("obras-content");
+
+const paintings = data.paintings;
+const paintingsTitle = document.createElement("h2");
+paintingsTitle.className = "category-title";
+paintingsTitle.textContent = "Paintings";
+container.appendChild(paintingsTitle);
+
+const paintingsRow = document.createElement("div");
+paintingsRow.className = "cover-row";
+
+Object.keys(paintings).slice(0, 4).forEach((year) => {
+  const obrasDelAnio = paintings[year];
+  if (!obrasDelAnio || obrasDelAnio.length === 0) return;
+
+  const indiceAleatorio = Math.floor(Math.random() * obrasDelAnio.length);
+  const obra = obrasDelAnio[indiceAleatorio];
+
+  const item = document.createElement("div");
+  item.className = "cover-item";
+
+  const imagen = document.createElement("img");
+  imagen.src = obra.image;
+  imagen.alt = obra.title || "Obra sin título";
+
+  const anio = document.createElement("div");
+  anio.className = "cover-year";
+  anio.textContent = year;
+
+  item.appendChild(imagen);
+  item.appendChild(anio);
+  paintingsRow.appendChild(item);
+});
+
+container.appendChild(paintingsRow);
+
+// ======== INSTALLATIONS ========
+
+const installations = data.installations;
+
+const installationsTitle = document.createElement("h2");
+installationsTitle.className = "category-title";
+installationsTitle.textContent = "Installations";
+container.appendChild(installationsTitle);
+
+const installationsRow = document.createElement("div");
+installationsRow.className = "cover-row";
+
+Object.keys(installations).slice(0, 3).forEach((year) => {
+  const obrasDelAnio = installations[year];
+  if (!obrasDelAnio || obrasDelAnio.length === 0) return;
+
+  // Buscar la obra que tiene la imagen marcada como cover
+  const cover = obrasDelAnio.find((obra) =>
+    obra.image.includes("-cover")
+  );
+
+  if (!cover) return;
+
+  const item = document.createElement("div");
+  item.className = "cover-item";
+
+  const imagen = document.createElement("img");
+  imagen.src = cover.image;
+  imagen.alt = cover.title || "Obra sin título";
+
+  const anio = document.createElement("div");
+  anio.className = "cover-year";
+  anio.textContent = year;
+
+  item.appendChild(imagen);
+  item.appendChild(anio);
+  installationsRow.appendChild(item);
+});
+
+container.appendChild(installationsRow);
+
+
   })
   .catch(err => console.error("❌ Error al cargar el JSON:", err));
+
