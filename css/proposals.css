@@ -1,0 +1,113 @@
+/* === ESTRUCTURA GENERAL === */
+
+body.proposals {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e6e6e6;
+  color: #111;
+  display: flex;
+}
+
+#side-menu {
+  width: 180px;
+  background-color: #e6e6e6;
+  height: 100vh;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+#side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#side-menu li {
+  margin-bottom: 30px;
+}
+
+#side-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+#side-menu a.active {
+  border-bottom: 2px solid white;
+}
+
+.home-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+/* === CONTENIDO PRINCIPAL === */
+
+#obras-content {
+  flex-grow: 1;
+  padding: 60px 40px;
+}
+
+.category-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.cover-row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* .cover-item {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cover-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cover-year {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+} */
+.cover-item {
+  width: 240px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cover-item img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.cover-year {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444;
+}

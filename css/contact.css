@@ -1,16 +1,18 @@
 body {
   margin: 0;
-  background-color: #f9f9f9;
+  /* background-color: #f4f4f4; */
+  background-color: rgb(116, 115, 115);
   font-family: Georgia, serif;
   color: #111;
 }
 
 #contact-layout {
-  margin-left: 180px;
+  margin-left: 280px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   padding: 100px;
+  /* padding-left: 180px; */
   min-height: 100vh;
   gap: 100px;
   box-sizing: border-box;
@@ -18,16 +20,25 @@ body {
 
 .contact-image img {
   width: auto;
-  height: 700px; /* ← fuerza a crecer hacia abajo */
+  height: 600px;
+  max-height: 80vh; /* ← limita la altura al 80% de la pantalla */
   display: block;
   object-fit: cover;
 }
 
-.contact-info {
+
+/* .contact-info {
   font-size: 18px;
   line-height: 1.9;
   max-width: 500px;
   padding-top: 40px;
+} */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* ← sube el contenido hacia arriba */
+  margin-top: -190px;           /* ← ajusta más arriba si lo necesitás */
 }
 
 .contact-info h1 {
@@ -44,4 +55,21 @@ body {
 
 .contact-info a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-height: 800px) {
+  #contact-layout {
+    padding: 40px;
+    gap: 50px;
+  }
+
+  .contact-image img {
+    height: auto;
+    max-height: 70vh;
+  }
+
+  .contact-info {
+    font-size: 16px;
+    line-height: 1.7;
+  }
 }
