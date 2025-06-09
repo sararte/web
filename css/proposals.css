@@ -83,7 +83,7 @@ body.proposals {
 
 
 .cover-item {
-  width: 220px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,11 +92,17 @@ body.proposals {
 }
 
 .cover-item img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  display: block;
+  width: 190px;
+  height: 190px;
+  /* object-fit: cover;
+  display: block; */
 }
+
+
+/*  .cover-item img {
+  width: 190px;
+  height: auto;
+} */
 
 .cover-year {
   margin-top: 10px;
