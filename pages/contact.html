@@ -1,40 +1,52 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact</title>
-  <link rel="stylesheet" href="../css/menu.css" />
   <link rel="stylesheet" href="../css/contact.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="../css/menu.css" />
 </head>
 <body>
-  <!-- Menú lateral -->
-  <nav id="side-menu">
+  <nav id="side-menu" class="hidden">
     <ul>
       <li id="menu-home">
         <a href="../index.html">
           <img src="../img/home.png" alt="Home" />
         </a>
       </li>
-        
-        <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
 
+  <div id="contact-background"></div>
 
+  <main id="contact-form-container" class="hidden">
+    <form id="contact-form" autocomplete="off">
+      <label for="name">NAME</label>
+      <input type="text" id="name" name="name" required />
 
-  <!-- Contenido principal -->
-  <main id="contact-layout">
-    <div class="contact-image">
-      <img src="../img/contact.jpg" alt="Estudio Marco Saravia Vega" />
-    </div>
-    <div class="contact-info">
-      <h1>Studio</h1>
-      <p><a href="mailto:marco@email.com">marco@email.com</a></p>
-      <p><a href="https://www.marcosaravia.art" target="_blank">www.marcosaravia.art</a></p>
-    </div>
+      <label for="email">EMAIL</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">MESSAGE</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">SEND</button>
+    </form>
   </main>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      // Esperamos 5 segundos con fondo original
+      setTimeout(() => {
+        // Al segundo 5: atenuamos fondo
+        document.getElementById("contact-background").classList.add("dimmed");
+        // y mostramos el formulario y el menú
+        document.getElementById("contact-form-container").classList.remove("hidden");
+        document.getElementById("side-menu").classList.remove("hidden");
+      }, 5000);
+    });
+  </script>
 </body>
 </html>
