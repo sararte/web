@@ -27,6 +27,9 @@ fetch("../data/artworks_with_dimensions.json")
 
         const item = document.createElement("div");
         item.className = "cover-item";
+        item.dataset.category = "drawings";
+        item.dataset.year = anio;
+
 
         const img = document.createElement("img");
         img.src = obra.image;
@@ -66,6 +69,9 @@ Object.keys(paintings).slice(0, 4).forEach((year) => {
 
   const item = document.createElement("div");
   item.className = "cover-item";
+  item.dataset.category = "paintings";
+  item.dataset.year = year;
+
 
   const imagen = document.createElement("img");
   imagen.src = obra.image;
@@ -106,10 +112,15 @@ Object.keys(installations).slice(0, 3).forEach((year) => {
   if (!cover) return;
 
   const item = document.createElement("div");
-  item.className = "cover-item";
+item.className = "cover-item installation-cover";
+item.dataset.year = year;
+
 
   const imagen = document.createElement("img");
   imagen.src = cover.image;
+  imagen.src = cover.image;
+console.log("🖼️ Instalación:", year, "→", cover.image);
+
   imagen.alt = cover.title || "Obra sin título";
 
   const anio = document.createElement("div");
@@ -119,11 +130,17 @@ Object.keys(installations).slice(0, 3).forEach((year) => {
   item.appendChild(imagen);
   item.appendChild(anio);
   installationsRow.appendChild(item);
+  
 });
 
 container.appendChild(installationsRow);
+if (typeof activarVisorInstallations === "function") {
+  activarVisorInstallations();
+}
+
 
 
   })
   .catch(err => console.error("❌ Error al cargar el JSON:", err));
+
 
