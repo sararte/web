@@ -5,7 +5,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(10, 10, 10, 1.2); /* fondo del visor */
+  background-color: rgba(10, 10, 10, 1.2); 
   display: flex;
   justify-content: center;
   align-items: center;

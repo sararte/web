@@ -2,7 +2,8 @@
 
 body {
   margin: 0;
-  background-color: rgb(116, 115, 115);
+  /* background-color: rgb(116, 115, 115); */
+  background-color: #e4e4e4;
   overflow: hidden;
 }
 

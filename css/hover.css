@@ -20,3 +20,8 @@
   background-color: #b8b8b8;
   padding-bottom: 40px;
 }
+
+.cover-item:hover .cover-year {
+  color: white;
+}
+
